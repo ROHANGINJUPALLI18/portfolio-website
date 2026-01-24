@@ -1,40 +1,81 @@
+import React from 'react';
+
 function LearningCard() {
-    const data = [
-        {
-            year:'I-Year',
-            desc:'Programming fundamentals , Data structures basics, Problem-solving and logical thinking, HTML5 and CSS3 fundamentals,JavaScript (ES6 concepts), Git and GitHub, Bootstrap , Command line and basic Linux usage'
-        },
-        {
-            year:'II-Year',
-            desc:'React.js ,Redux ,Redux Toolkit Query ,TypeScript Tailwind CSS and responsive design, Basic backend development(MERN), REST API, Firebase , SQL and NoSQL concepts, Project structuring and clean code practices. Started doing mini projects on MERN'
-        },
-        {
-            year:'III-Year',
-            desc:'Will focus on mastering Data Structures and Algorithms, competitive programming, and building advanced full-stack applications , Building AI-Based appilications'
-        },
-        {
-            year:'IV-Year',
-            desc:'System design, scalable systems, production-level projects, and placement readiness.'
-        },
+  const data = [
+    {
+      year: "I-Year",
+      skills: [
+        "Programming Fundamentals",
+        "Data Structures Basics",
+        "Problem Solving",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Git",
+        "GitHub",
+        "Bootstrap",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      year: "II-Year",
+      skills: [
+        "React.js",
+        "Redux",
+        "Redux Toolkit Query",
+        "TypeScript",
+        "Responsive Design",
+        "Basic Backend Development (MERN)",
+        "REST API",
+        "Firebase",
+        "SQL Concepts",
+        "NoSQL Concepts",
+        "Clean Code Practices",
+        "Mini Projects on MERN Stack"
+      ]
+    },
+    {
+      year: "III-Year",
+      skills: []
+    },
+    {
+      year: "IV-Year",
+      skills: []
+    }
+  ];
 
-    ]
-
-    const requiredData = data.map((currentYear, index)=>{
-        return <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <div className="text-xl inline p-1 rounded-3xl bg-yellow-300 font-bold text-blue-600 mb-3">
-                {currentYear.year}
-            </div>
-            <div className="text-gray-700 mt-3">
-                {currentYear.desc}
-            </div>
+  const requiredData = data.map((currentYear,index)=>{
+    return <div className='bg-[#2B3348]  p-5 rounded-xl shadow-md hover:-translate-y-2 
+          hover:shadow-2xl 
+          hover:bg-gray-100
+          hover:text-black
+          transition-all 
+          duration-300 
+          ease-in-out 
+          cursor-default
+          ' key={index} >
+        {/* years to display */}
+        <div className='text-center text-2xl font-bold' >
+            {currentYear.year}
         </div>
-    })
+        {/* skills to display */}
+        <div className='space-y-1 mt-3'>
+            <ul>
+                {
+                    currentYear.skills.map((skill,index)=>{
+                        return <li key={index} >{skill}</li>
+                    })
+                }
+            </ul>
+        </div>
+    </div>
+  })
 
   return (
     <>
         {requiredData}
     </>
-  )
+  );
 }
 
-export default LearningCard
+export default LearningCard;

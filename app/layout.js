@@ -3,18 +3,24 @@ import Footer from '@/components/Footer';
 import '@/app/globals.css';
 
 export const metadata = {
-  title: 'PropertyPulse | Find The Perfect Rental',
-  description: 'Find your dream rental property',
-  keywords: 'rental, find rentals, find properties',
+  title: 'Rohan Ginjupalii | Protfolio',
+  description: 'Explore my tech stack',
+  keywords: 'protfolio, rohan, techStack',
 };
 
 const MainLayout = ({ children }) => {
   return (
         <html lang='en'>
-          <body>
+          <head>
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            />
+          </head>
+          <body className="bg-[#090C1D] min-h-screen text-white" >
             <Navbar />
             <main>{children}</main>
-            <Footer />
+            <Footer  />
           </body>
         </html>
   );
