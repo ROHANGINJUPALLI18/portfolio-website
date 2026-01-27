@@ -7,12 +7,12 @@ function page() {
         <div className="text-3xl font-extrabold " >
           My Projects
         </div>
-        <div className="text-2xl" >
+        <div className="text-xl" >
           Explore all my frontend and backend projects
         </div>
       </div>
       {/* project cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 p-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 p-2 h-full">
         <ProjectCard />
       </div>
     </div>

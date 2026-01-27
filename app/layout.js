@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import '@/app/globals.css';
+import AuthProvider from '@/components/AuthProvider';
 
 export const metadata = {
   title: 'Rohan Ginjupalii | Protfolio',
@@ -10,6 +11,7 @@ export const metadata = {
 
 const MainLayout = ({ children }) => {
   return (
+      <AuthProvider>
         <html lang='en'>
           <head>
             <link
@@ -23,6 +25,7 @@ const MainLayout = ({ children }) => {
             <Footer  />
           </body>
         </html>
+      </AuthProvider>
   );
 };
 export default MainLayout;

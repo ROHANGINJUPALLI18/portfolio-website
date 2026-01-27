@@ -117,11 +117,11 @@ const SkillsPage = () => {
   ];
 
     return ( <div>
-        <div className="flex flex-col items-center mt-6" >
+        <div className="flex flex-col flex-wrap items-center px-3 mt-6" >
             <div className="text-4xl font-bold font-sans mb-2 mt-3" >
                 Tech Stack
             </div>
-            <div className="text-2xl mb-4" >
+            <div className="text-lg mb-4" >
                 These are the technologies used by me for building full stack web appilications 
             </div>
         </div>

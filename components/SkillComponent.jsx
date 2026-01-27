@@ -1,7 +1,7 @@
 const SkillComponent = ({stack,title}) => {
     return ( <div>
         <div>
-                <div className="text-2xl font-semibold mb-2 mt-3" >{title}</div>
+                <div className="text-xl font-semibold mb-2 mt-3" >{title}</div>
                 <div className="flex flex-wrap gap-4 px-4">
                 {stack.map((skill, index) => (
                   <div
@@ -20,8 +20,8 @@ const SkillComponent = ({stack,title}) => {
                       shadow-lg
                     "
                   >
-                    <span className="text-2xl">{skill.logo}</span>
-                    <span className="p-1 text-xl " >{skill.name}</span>
+                    <span className="text-md">{skill.logo}</span>
+                    <span className="p-1 text-md " >{skill.name}</span>
                   </div>
                 ))}
               </div>
