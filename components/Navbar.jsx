@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           {/* links desktop */}
           <div className="hidden sm:block" >
-            <Link href='/' className={handleNavItemClick("/")} >About Me</Link>
+            <Link href='/' className={handleNavItemClick("/")} >About</Link>
             <Link href='/Experience' className={handleNavItemClick("/Experience")} >Experience</Link>
             <Link href='/Skills' className={handleNavItemClick("/Skills")} >Skills</Link>
             <Link href='/Projects' className={handleNavItemClick("/Projects")} >Projects</Link>

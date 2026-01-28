@@ -17,7 +17,7 @@ function Hero() {
                 <div className="pl-4 text-5xl mb-3 text-[#577BC1] " >
                   Developer
                 </div>
-                <div className="pl-4 font-medium max-w-xl text-xl text-left " >
+                <div className="pl-4 font-medium max-w-xl text-xl text-left opacity-50 " >
                   Second year IT student building scalable applications . Currently working on projects with Next.js, React, Database & TypeScript.
                 </div>
               </div>
