@@ -1,6 +1,6 @@
 const SkillComponent = ({stack,title}) => {
     return ( <div>
-        <div>
+              <div>
                 <div className="text-xl font-semibold mb-2 mt-3" >{title}</div>
                 <div className="flex flex-wrap gap-4 px-4">
                 {stack.map((skill, index) => (

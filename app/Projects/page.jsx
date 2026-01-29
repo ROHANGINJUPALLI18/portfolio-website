@@ -7,7 +7,7 @@ function page() {
         <div className="text-3xl font-extrabold " >
           My Projects
         </div>
-        <div className="text-xl" >
+        <div className="flex flex-wrap text-xl mx-2 opacity-70 " >
           Explore all my frontend and backend projects
         </div>
       </div>

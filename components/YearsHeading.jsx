@@ -5,7 +5,7 @@ function YearsHeading() {
             <div className="text-4xl font-sans mt-5" >
                 My Learnings
             </div>
-            <div className="text-xl font-semibold mt-5" >
+            <div className="flex flex-wrap text-xl font-semibold mt-5 px-4 opacity-90 " >
                 Explore my  learnings across frontend and backend 
             </div>
             

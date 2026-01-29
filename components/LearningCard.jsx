@@ -45,7 +45,7 @@ function LearningCard() {
   ];
 
   const requiredData = data.map((currentYear,index)=>{
-    return <div className='bg-[#2B3348]  p-5 rounded-xl shadow-md hover:-translate-y-2 
+    return <div className='bg-[#2B3348] opacity-60  p-5 rounded-xl shadow-md hover:-translate-y-2 
           hover:shadow-2xl 
           hover:bg-gray-100
           hover:text-black
@@ -55,7 +55,7 @@ function LearningCard() {
           cursor-default
           ' key={index} >
         {/* years to display */}
-        <div className='text-center text-2xl font-bold' >
+        <div className='text-center text-2xl font-bold text-white' >
             {currentYear.year}
         </div>
         {/* skills to display */}

@@ -118,15 +118,15 @@ const SkillsPage = () => {
 
     return ( <div>
         <div className="flex flex-col flex-wrap items-center px-3 mt-6" >
-            <div className="text-4xl font-bold font-sans mb-2 mt-3" >
+            <div className="text-3xl font-bold font-sans mb-2 mt-3" >
                 Tech Stack
             </div>
-            <div className="text-lg mb-4" >
+            <div className="flex flex-wrap  text-lg mb-4 mx-5 opacity-50" >
                 These are the technologies used by me for building full stack web appilications 
             </div>
         </div>
         {/* display the tech stack with images */}
-        <div className="px-4">
+        <div className="px-5 mb-3">
             {/* frontend technologies */}
             <SkillComponent stack={frontend} title="Frontend" />
 
