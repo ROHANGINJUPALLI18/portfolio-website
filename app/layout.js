@@ -4,7 +4,7 @@ import '@/app/globals.css';
 import AuthProvider from '@/components/AuthProvider';
 
 export const metadata = {
-  title: 'Rohan Ginjupalii | Protfolio',
+  title: 'Rohan Ginjupalii',
   description: 'Explore my tech stack',
   keywords: 'protfolio, rohan, techStack',
 };
