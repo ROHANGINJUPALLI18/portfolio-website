@@ -3,67 +3,60 @@ import React from 'react';
 function LearningCard() {
   const data = [
     {
-      year: "I-Year",
+      year: "1st-Year",
       skills: [
-        "Programming Fundamentals",
-        "Data Structures Basics",
-        "Problem Solving",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Git",
-        "GitHub",
-        "Bootstrap",
-        "Tailwind CSS"
-      ]
-    },
-    {
-      year: "II-Year",
-      skills: [
-        "React.js",
-        "Redux",
-        "Redux Toolkit Query",
+        "Web Fundementals",
+        "Programming Basics",
+        "Html , Css , Js",
+        "Tailwind",
+        "Node",
+        "Express",
+        "Sql",
         "TypeScript",
-        "Responsive Design",
-        "Basic Backend Development (MERN)",
-        "REST API",
-        "Firebase",
-        "SQL Concepts",
-        "NoSQL Concepts",
-        "Clean Code Practices",
-        "Mini Projects on MERN Stack"
+        "Ds Algo Basics"
       ]
     },
     {
-      year: "III-Year",
+      year: "2nd-Year",
+      skills: [
+        "React",
+        "Next",
+        "Firebase",
+        "MongoDB",
+        "Redux",
+        "Rest-Api",
+        "Currently on Agentic AI ............"
+      ]
+    },
+    {
+      year: "3rd-Year",
       skills: []
     },
     {
-      year: "IV-Year",
+      year: "4th-Year",
       skills: []
     }
   ];
 
   const requiredData = data.map((currentYear,index)=>{
-    return <div className='bg-[#2B3348] opacity-60  p-5 rounded-xl shadow-md hover:-translate-y-2 
+    return <div className='border border-white rounded-xl text-white shadow-2xl bg-[#0F2854] opacity-80 p-3 hover:-translate-y-2 
           hover:shadow-2xl 
-          hover:bg-gray-100
-          hover:text-black
           transition-all 
           duration-300 
           ease-in-out 
           cursor-default
+          h-full
           ' key={index} >
         {/* years to display */}
-        <div className='text-center text-2xl font-bold text-white' >
+        <div className='text-center text-xl font-bold text-white' >
             {currentYear.year}
         </div>
         {/* skills to display */}
-        <div className='space-y-1 mt-3'>
+        <div className='flex space-y-3 mt-3'>
             <ul>
                 {
                     currentYear.skills.map((skill,index)=>{
-                        return <li key={index} >{skill}</li>
+                        return <li className='' key={index} >{skill}</li>
                     })
                 }
             </ul>

@@ -134,7 +134,7 @@ const Navbar = () => {
         {isProfileMenuOpen && (
           <div
             id="user-menu"
-            className="absolute top-15 right-20 z-10 mt-2 w-auto origin-top-right px-3 py-1 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            className=" flex flex-col items-center absolute  top-15 right-20 z-10 mt-2 w-auto origin-top-right px-3 py-1 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="user-menu-button"
@@ -149,12 +149,10 @@ const Navbar = () => {
                 setIsProfileMenuOpen(false);
                 signOut({ callbackUrl: "/" });
               }}
-              className="block py-2 text-sm text-gray-700 bg-blue-400 rounded-2xl p-2 my-2"
+              className="py-2 text-sm text-white bg-red-600  rounded-2xl p-2 my-2 "
               role="menuitem"
-              tabIndex="-1"
-              id="user-menu-item-2"
             >
-              Sign Out
+            Log-Out
             </button>
           </div>
         )}
